@@ -196,6 +196,9 @@ if(1)
 
 endif()
 
+# Install package.xml
+install(FILES package.xml DESTINATION share/core_moos)
+
 #here we save a version file
 set(VERSION_FILE "${PROJECT_BINARY_DIR}/${PROJECTNAME}ConfigVersion.cmake")
 configure_file( "cmake/ProjectConfigVersion.cmake.in" ${VERSION_FILE} @ONLY )
